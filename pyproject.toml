@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
-description = "first attempt to code something whole"
+version = "0.2.0"
+description = "add greeting step"
 authors = ["mesto3  <mesto3@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
@@ -11,6 +11,7 @@ brain-games = "brain_games.scripts.brain_games:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prompt = "^0.4.1"
 
 
 [build-system]
