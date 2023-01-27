@@ -2,18 +2,21 @@
 # file <brain_even.py> brain_even game script
 
 import random
-from brain_games.cli import welcome_user
+#from brain_games.cli import welcome_user
 
-name = ''
-num = ''
-corr_ans = ''
-i = 1
-round_count = 4
+#welcome_user('')
 
-welcome_user('')
+print('Welcome to Brain Games!')
+name = input('May I have your name? ')
+print(f'Hello, {name}!')
 print('Answer "yes" if the number is even, otherwise answer "no".')
 
 def main():        
+    i = 1
+    corr_ans = ''
+    num = ''
+    round_count = 4
+
     # счетчик правильных игр
     while i < round_count:
         # генерация и определения правильного результата
