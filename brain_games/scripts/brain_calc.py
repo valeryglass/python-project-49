@@ -1,26 +1,29 @@
 #!/usr/bin/env python3
-# file <brain_even.py> brain_even game script
+# file <brain_calc.py> brain_calc game script
 
 from brain_games.cli import welcome_user, summary
-from brain_games.games.even_logic import even_calc
+from brain_games.games.calc_logic import random_calc
+
 
 # intro
-print('Welcome to Brain Games!')
+print('Welcome to the Brain Games!')
 
 # знакомство узнаем имя
 name = welcome_user('')
 
 
-def brain_even():
+def brain_calc():
     user_ans = ''  # ответ пользователя
     corr_ans = ''  # правильный ответ
+#    operator_list = ['+', '-', '*']  # список операторов
     i = 1  # счетчик раундов
     round_count = 4  # количество раундов
-    task_text = 'Answer "yes" if the number is even, otherwise answer "no".'
+    task_text = 'What is the result of the expression?'
     t = []
+
     print(task_text)
     while i < round_count:
-        t = even_calc()
+        t = random_calc()
         quest = t[0]
         corr_ans = t[1]
         i += 1
@@ -32,12 +35,12 @@ def brain_even():
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             break
 
-# # summary
+# summary
     summary(i, round_count, name)
 
 
 def main():
-    brain_even()
+    brain_calc()
 
 
 if __name__ == '__main__':
