@@ -12,7 +12,7 @@ def welcome_user(name):  # welcoming and KYC
 def summary(i, round_count, name):  # calculating game summary
     if i >= round_count:
         summary_text = print(f'Congratulations, {name}!')
-        return summary_text    
+        return summary_text 
     else:
         summary_text = print(f"Let's try again, {name}!")
         return summary_text
