@@ -2,19 +2,14 @@
 
 import prompt
 
-# welcoming and KYC
 
-
-def welcome_user(name):
+def welcome_user(name):  # welcoming and KYC
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
 
 
-# calculating game summary
-
-
-def summary(i, round_count, name):
+def summary(i, round_count, name):  # calculating game summary
     if i >= round_count:
         summary_text = print(f'Congratulations, {name}!')
         return summary_text    
