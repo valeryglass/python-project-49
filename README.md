@@ -4,5 +4,8 @@
 # Maintainability index
 <a href="https://codeclimate.com/github/valeryglass/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/310cc88a70aaee21e87e/maintainability" /></a>
 
-# Video of installation, run and basic use-cases
+# Video of installation, run and basic use-cases of Brain-Even
 https://asciinema.org/a/bSmpFo9ouNV3tx88HSKnG6RJ1
+
+# Video of installation, run and basic use-cases of Brain-Calc
+https://asciinema.org/a/PnSpnduTrjwBjfvTP3RBEkwOj
