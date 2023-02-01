@@ -9,3 +9,6 @@ https://asciinema.org/a/bSmpFo9ouNV3tx88HSKnG6RJ1
 
 # Video of installation, run and basic use-cases of Brain-Calc
 https://asciinema.org/a/PnSpnduTrjwBjfvTP3RBEkwOj
+
+# Video of installation, run and basic use-cases of Brain-GCD
+https://asciinema.org/a/5UgYFBhG6fbONjkJjVgnBpc56
