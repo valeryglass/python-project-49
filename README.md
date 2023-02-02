@@ -12,3 +12,6 @@ https://asciinema.org/a/PnSpnduTrjwBjfvTP3RBEkwOj
 
 # Video of installation, run and basic use-cases of Brain-GCD
 https://asciinema.org/a/5UgYFBhG6fbONjkJjVgnBpc56
+
+# Video of installation, run and basic use-cases of Brain-Progression
+https://asciinema.org/a/feYjLtmGgWhqIHFGbfFwqih44
