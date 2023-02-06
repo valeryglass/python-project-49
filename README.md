@@ -15,3 +15,6 @@ https://asciinema.org/a/5UgYFBhG6fbONjkJjVgnBpc56
 
 # Video of installation, run and basic use-cases of Brain-Progression
 https://asciinema.org/a/feYjLtmGgWhqIHFGbfFwqih44
+
+# Video of installation, run and basic use-cases of Brain-Prime
+https://asciinema.org/a/l67bRJpsfPXq1sTFhnXEwZLwS
