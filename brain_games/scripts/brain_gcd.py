@@ -7,7 +7,7 @@ from brain_games.games.gcd_logic import logic_outputs
 
 # intro
 print('Welcome to the Brain Games!')
-name = welcome_user('')
+name = welcome_user()
 
 
 def brain_gcd():
@@ -30,8 +30,6 @@ def brain_gcd():
         else:
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             break
-
-
     summary(i, round_count, name)  # Print game summary
 
 

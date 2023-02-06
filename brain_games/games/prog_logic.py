@@ -26,7 +26,7 @@ def logic_outputs():
     p = random.randint(0, len(progression_list)-1)  # index of hidden element
     quest_raw = list(progression_list)
     corr_ans = str(quest_raw[p])
-    quest_raw[p] = '..' 
+    quest_raw[p] = '..'
     quest = ' '.join(map(str, quest_raw))  # format quest text
     return quest, corr_ans
 

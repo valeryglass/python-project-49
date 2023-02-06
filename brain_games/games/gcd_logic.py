@@ -23,13 +23,13 @@ def get_devisor_list(number):
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
     x = 0  # parameter for randomization
-    y = 9  # parameter for randomization  
+    y = 9  # parameter for randomization
     list_gcd_common = []  # list of common gcd
     first_number = random.randint(x, y)  # first element
     second_number = random.randint(x, y)  # second element
     gdl1 = get_devisor_list(first_number)  # list of first element devisors
     gdl2 = get_devisor_list(second_number)  # list of secondelement devisors
-    list_gcd_common = list(set(gdl1) & set(gdl2)) 
+    list_gcd_common = list(set(gdl1) & set(gdl2))
     list_gcd_common.sort(reverse=True)
     quest = str(first_number) + ' ' + str(second_number)  # format quest text
     corr_ans = str(list_gcd_common[0])  # calculate correct answer

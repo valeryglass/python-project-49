@@ -2,6 +2,7 @@
 
 import random
 
+
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
     x = 0  # parameter for randomization

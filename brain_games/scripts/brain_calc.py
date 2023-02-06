@@ -7,13 +7,13 @@ from brain_games.games.calc_logic import logic_outputs
 
 # intro
 print('Welcome to the Brain Games!')
-name = welcome_user('')
+name = welcome_user()
 
 
 def brain_calc():
     # user_ans = ''  # ответ пользователя
     # corr_ans = ''  # правильный ответ
-#    operator_list = ['+', '-', '*']  # список операторов
+    # operator_list = ['+', '-', '*']  # список операторов
     i = 1  # счетчик раундов
     round_count = 4  # количество раундов
     task_text = 'What is the result of the expression?'
@@ -31,8 +31,6 @@ def brain_calc():
         else:
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             break
-
-
     summary(i, round_count, name)  # Print game summary
 
 

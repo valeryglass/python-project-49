@@ -6,7 +6,7 @@ import random
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
     x = 0  # parameter for randomization
-    y = 9  # parameter for randomization   
+    y = 9  # parameter for randomization
     operator_list = ['+', '-', '*']  # list of operators
     first_number = random.randint(x, y)  # first element
     second_number = random.randint(x, y)  # second element

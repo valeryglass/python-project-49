@@ -6,7 +6,7 @@ from brain_games.games.prog_logic import logic_outputs
 
 # intro
 print('Welcome to the Brain Games!')
-name = welcome_user('')
+name = welcome_user()
 
 
 def brain_prog():
@@ -29,8 +29,6 @@ def brain_prog():
         else:
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             break
-
-
     summary(i, round_count, name)  # Print game summary
 
 
