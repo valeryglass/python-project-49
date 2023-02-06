@@ -30,8 +30,8 @@ def brain_prime():
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             break
 
-# summary
-    summary(i, round_count, name)
+
+    summary(i, round_count, name)  # Print game summary
 
 
 def main():

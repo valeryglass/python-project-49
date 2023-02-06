@@ -2,8 +2,9 @@
 
 import random
 
-# поиск всех четных делителей числа
+
 def get_devisor_list(number):
+    # make list of devisors for given parameter
     j = number
     i = 0
     devisors_list = []
@@ -18,23 +19,25 @@ def get_devisor_list(number):
             continue
     return devisors_list
 
-# построение вопроса и поиск парвильного ответа
-def gcd_calc(x=1, y=9):
-    list_gcd_common = []
-    first_number = random.randint(x, y)
-    second_number = random.randint(x, y)
-    gdl1 = get_devisor_list(first_number)
-    gdl2 = get_devisor_list(second_number)
-    list_gcd_common = list(set(gdl1) & set(gdl2))
+
+def logic_outputs():
+    # make 'quest' and 'correct answer' for specific task
+    x = 0  # parameter for randomization
+    y = 9  # parameter for randomization  
+    list_gcd_common = []  # list of common gcd
+    first_number = random.randint(x, y)  # first element
+    second_number = random.randint(x, y)  # second element
+    gdl1 = get_devisor_list(first_number)  # list of first element devisors
+    gdl2 = get_devisor_list(second_number)  # list of secondelement devisors
+    list_gcd_common = list(set(gdl1) & set(gdl2)) 
     list_gcd_common.sort(reverse=True)
-    quest = str(first_number) + ' ' + str(second_number)  # строит вопрос
-    corr_ans = str(list_gcd_common[0])  # высчитывает правильный ответ
-#    corr_ans = str(corr_ans)
+    quest = str(first_number) + ' ' + str(second_number)  # format quest text
+    corr_ans = str(list_gcd_common[0])  # calculate correct answer
     return quest, corr_ans
 
 
 def main():
-    gcd_calc('')
+    logic_outputs()
 
 
 if __name__ == '__main__':

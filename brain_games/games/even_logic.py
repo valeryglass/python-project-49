@@ -2,17 +2,12 @@
 
 import random
 
-first_number = ''
-second_number = ''
-operator = ''
-quest = ''
-corr_ans = ''  # правильный ответ
-operator_list = ['+', '-', '*']  # список операторов
-
-
-def even_calc(x=0, y=9):
-    quest = random.randint(x, y)  # строит вопрос
-    if quest % 2 == 0:  # высчитывает правильный ответ
+def logic_outputs():
+    # make 'quest' and 'correct answer' for specific task
+    x = 0  # parameter for randomization
+    y = 99  # parameter for randomization
+    quest = random.randint(x, y)  # format quest text
+    if quest % 2 == 0:
         corr_ans = 'yes'
     else:
         corr_ans = 'no'
@@ -20,7 +15,7 @@ def even_calc(x=0, y=9):
 
 
 def main():
-    even_calc('')
+    logic_outputs()
 
 
 if __name__ == '__main__':

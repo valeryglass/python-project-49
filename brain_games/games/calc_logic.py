@@ -2,25 +2,22 @@
 
 import random
 
-first_number = ''
-second_number = ''
-operator = ''
-quest = ''
-corr_ans = ''  # правильный ответ
-operator_list = ['+', '-', '*']  # список операторов
 
-
-def random_calc(x=0, y=9):
-    first_number = random.randint(x, y)
-    second_number = random.randint(x, y)
+def logic_outputs():
+    # make 'quest' and 'correct answer' for specific task
+    x = 0  # parameter for randomization
+    y = 9  # parameter for randomization   
+    operator_list = ['+', '-', '*']  # list of operators
+    first_number = random.randint(x, y)  # first element
+    second_number = random.randint(x, y)  # second element
     operator = random.choice(operator_list)
-    quest = str(first_number) + ' ' + operator + ' ' + str(second_number)  # строит вопрос
-    corr_ans = str(eval(quest))  # высчитывает правильный ответ
+    quest = str(first_number) + ' ' + operator + ' ' + str(second_number)  # format quest text
+    corr_ans = str(eval(quest))  # calculate correct answer
     return quest, corr_ans
 
 
 def main():
-    random_calc('')
+    logic_outputs()
 
 
 if __name__ == '__main__':

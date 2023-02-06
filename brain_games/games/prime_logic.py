@@ -14,10 +14,10 @@ def is_prime(number):
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer'
-    x = 0
-    y = 99
-    quest = random.randint(x, y)
+    # make 'quest' and 'correct answer' for specific task
+    x = 0  # parameter for randomization
+    y = 99  # parameter for randomization
+    quest = random.randint(x, y)  # format quest text
     if is_prime(quest):
         corr_ans = 'yes'
     else:
