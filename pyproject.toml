@@ -1,10 +1,17 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.0"
-description = "First app"
+version = "0.1.0"
+description = "Set of simple text games based on mathematic"
 authors = ["mesto3  <mesto3@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+classifiers = [
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.1",
+    "Intended Audience :: Education"
+]
+license = "MIT"
+repository = "https://github.com/valeryglass/python-project-49"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
