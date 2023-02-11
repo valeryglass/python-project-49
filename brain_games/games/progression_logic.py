@@ -24,7 +24,7 @@ def logic_outputs():
     a1 = random.randint(x, y)  # start element
     a0 = random.randint(x1, y)  # amout of elements
     progression_list = get_progression_list(d, a1, a0)
-    p = random.randint(0, len(progression_list)-1)  # index of hidden element
+    p = random.randint(0, len(progression_list) - 1)  # index of hidden element
     quest_raw = list(progression_list)
     corr_ans = str(quest_raw[p])
     quest_raw[p] = '..'
