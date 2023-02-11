@@ -10,9 +10,9 @@ def welcome_user():
     return name
 
 
-def summary(i, round_count, name):
+def summary(i, raund_count, name):
     # calculate game summary and print it
-    if i == round_count + 1:
+    if i == raund_count + 1:
         summary_text = print(f'Congratulations, {name}!')
         return summary_text
     else:

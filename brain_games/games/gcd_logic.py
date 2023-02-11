@@ -4,7 +4,7 @@ import random
 
 
 def get_devisor_list(number):
-    # make list of devisors for given parameter
+    # make list of devisors for given number
     j = number
     i = 0
     devisors_list = []
@@ -34,35 +34,35 @@ def logic_outputs():
     list_gcd_common = list(set(gdl1) & set(gdl2))
     list_gcd_common.sort(reverse=True)
     quest = str(first_number) + ' ' + str(second_number)  # format quest text
-    corr_ans = str(list_gcd_common[0])  # calculate correct answer
+    correct_answer = str(list_gcd_common[0])  # calculate correct answer
     print(list_gcd_common[0])
     print(list_gcd_common)
-    print(corr_ans)
-    return quest, corr_ans, task_text
+    print(correct_answer)
+    return quest, correct_answer, task_text
 
 
 def game_drive():
-    # round revolver
-    i = 1  # round index
-    round_count = 3  # max round
-    while i <= round_count:
+    # raund revolver
+    i = 1  # raund index
+    raund_count = 3  # max raund
+    while i <= raund_count:
         logic_outputs_list = logic_outputs()
         quest = logic_outputs_list[0]
-        corr_ans = logic_outputs_list[1]
+        correct_answer = logic_outputs_list[1]
         task_text = logic_outputs_list[2]
         if i == 1:
             print(f'{task_text}')
         i += 1
         print(f'Question: {quest}')
-        user_ans = input('Your answer: ')
-        if user_ans == corr_ans:
+        user_answer = input('Your answer: ')
+        if user_answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. "
-                  f"Correct answer was '{corr_ans}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             i = 0
             break
-    return i, round_count
+    return i, raund_count
 
 
 def main():

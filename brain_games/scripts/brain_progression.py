@@ -13,8 +13,8 @@ name = welcome_user()
 def brain_progression():
     t = game_drive()
     i = t[0]
-    round_count = t[1]
-    summary(i, round_count, name)  # Print game summary
+    raund_count = t[1]
+    summary(i, raund_count, name)  # Print game summary
 
 
 def main():

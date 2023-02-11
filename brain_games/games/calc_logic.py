@@ -13,32 +13,32 @@ def logic_outputs():
     second_number = random.randint(x, y)  # second element
     operator = random.choice(operator_list)
     quest = str(first_number) + ' ' + operator + ' ' + str(second_number)
-    corr_ans = str(eval(quest))  # calculate correct answer
-    return quest, corr_ans, task_text
+    correct_answer = str(eval(quest))  # calculate correct answer
+    return quest, correct_answer, task_text
 
 
 def game_drive():
-    # round revolver
-    i = 1  # round index
-    round_count = 3  # max round
-    while i <= round_count:
+    # raund revolver
+    i = 1  # raund index
+    raund_count = 3  # max raund
+    while i <= raund_count:
         logic_outputs_list = logic_outputs()
         quest = logic_outputs_list[0]
-        corr_ans = logic_outputs_list[1]
+        correct_answer = logic_outputs_list[1]
         task_text = logic_outputs_list[2]
         if i == 1:
             print(f'{task_text}')
         i += 1
         print(f'Question: {quest}')
-        user_ans = input('Your answer: ')
-        if user_ans == corr_ans:
+        user_answer = input('Your answer: ')
+        if user_answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. "
-                  f"Correct answer was '{corr_ans}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             i = 0
             break
-    return i, round_count
+    return i, raund_count
 
 
 def main():
