@@ -12,7 +12,7 @@ def welcome_user():
 
 def summary(i, round_count, name):
     # calculate game summary and print it
-    if i > round_count:
+    if i == round_count:
         summary_text = print(f'Congratulations, {name}!')
         return summary_text
     else:
