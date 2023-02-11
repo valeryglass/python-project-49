@@ -11,7 +11,7 @@ name = welcome_user()
 
 def brain_even():
     i = 1  # round index
-    round_count = 4  # max round
+    round_count = 3  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]
