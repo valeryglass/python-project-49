@@ -32,6 +32,7 @@ def game_drive():
         user_ans = input('Your answer: ')
         if user_ans == corr_ans:
             print('Correct!')
+            print(i)
         else:
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
             i = 0

@@ -10,16 +10,17 @@ name = welcome_user()
 
 
 def brain_even():
-    i = 1  # round index
-    round_count = 3  # max round
+    #i = 1  # round index
+    #round_count = 3  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]
     summary(i, round_count, name)  # Print game summary
-
+ 
 
 def main():
     brain_even()
+    
 
 
 if __name__ == '__main__':
