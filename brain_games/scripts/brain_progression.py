@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# file <brain_prog.py> brain_prog script
+# file <brain_progression.py> brain_progression script
 
 from brain_games.cli import welcome_user, summary
-from brain_games.games.prog_logic import game_drive
+from brain_games.games.progression_logic import game_drive
 
 
 # intro
@@ -10,7 +10,7 @@ print('Welcome to the Brain Games!')
 name = welcome_user()
 
 
-def brain_prog():
+def brain_progression():
     t = game_drive()
     i = t[0]
     round_count = t[1]
@@ -18,7 +18,7 @@ def brain_prog():
 
 
 def main():
-    brain_prog()
+    brain_progression()
 
 
 if __name__ == '__main__':
