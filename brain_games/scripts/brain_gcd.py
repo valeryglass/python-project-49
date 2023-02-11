@@ -11,8 +11,6 @@ name = welcome_user()
 
 
 def brain_gcd():
-    i = 1  # round index
-    round_count = 4  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]

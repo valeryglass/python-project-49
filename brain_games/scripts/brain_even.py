@@ -4,14 +4,13 @@
 from brain_games.cli import welcome_user, summary
 from brain_games.games.even_logic import game_drive
 
+
 # intro
-print('Welcome to Brain Games!')
+print('Welcome to the Brain Games!')
 name = welcome_user()
 
 
 def brain_even():
-    #i = 1  # round index
-    #round_count = 3  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]
@@ -21,7 +20,6 @@ def brain_even():
 def main():
     brain_even()
     
-
 
 if __name__ == '__main__':
     main()

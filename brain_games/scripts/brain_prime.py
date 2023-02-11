@@ -10,9 +10,7 @@ print('Welcome to the Brain Games!')
 name = welcome_user()
 
 
-def brain_prog():
-    i = 1  # round index
-    round_count = 4  # max round
+def brain_prime():
     t = game_drive()
     i = t[0]
     round_count = t[1]
@@ -20,7 +18,7 @@ def brain_prog():
 
 
 def main():
-    brain_prog()
+    brain_prime()
 
 
 if __name__ == '__main__':

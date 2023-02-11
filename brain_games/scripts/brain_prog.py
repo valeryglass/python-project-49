@@ -1,4 +1,4 @@
-#!/usr/bin/ev python3
+#!/usr/bin/env python3
 # file <brain_prog.py> brain_prog script
 
 from brain_games.cli import welcome_user, summary
@@ -11,8 +11,6 @@ name = welcome_user()
 
 
 def brain_prog():
-    i = 1  # round index
-    round_count = 4  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]

@@ -40,8 +40,8 @@ def logic_outputs():
 def game_drive():
     # round revolver
     i = 1  # round index
-    round_count = 4  # max round
-    while i < round_count:
+    round_count = 3  # max round
+    while i <= round_count:
         logic_outputs_list = logic_outputs()
         quest = logic_outputs_list[0]
         corr_ans = logic_outputs_list[1]
@@ -55,6 +55,7 @@ def game_drive():
             print('Correct!')
         else:
             print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            i = 0
             break
     return i, round_count
 

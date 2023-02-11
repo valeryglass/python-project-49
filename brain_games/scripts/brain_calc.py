@@ -2,7 +2,7 @@
 # file <brain_calc.py> brain_calc game script
 
 from brain_games.cli import welcome_user, summary
-from brain_games.games.prog_logic import game_drive
+from brain_games.games.calc_logic import game_drive
 
 
 # intro
@@ -11,8 +11,6 @@ name = welcome_user()
 
 
 def brain_calc():
-    i = 1  # round index
-    round_count = 4  # max round
     t = game_drive()
     i = t[0]
     round_count = t[1]
