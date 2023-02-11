@@ -15,11 +15,11 @@ def brain_even():
     i = t[0]
     round_count = t[1]
     summary(i, round_count, name)  # Print game summary
- 
+
 
 def main():
     brain_even()
-    
+
 
 if __name__ == '__main__':
     main()
