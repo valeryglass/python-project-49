@@ -23,7 +23,7 @@ def get_devisor_list(number):
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
     task_text = 'Find the greatest common divisor of given numbers.'  # task text
-    x = 0  # parameter for randomization
+    x = 1  # parameter for randomization
     y = 9  # parameter for randomization
     list_gcd_common = []  # list of common gcd
     first_number = random.randint(x, y)  # first element
@@ -34,6 +34,9 @@ def logic_outputs():
     list_gcd_common.sort(reverse=True)
     quest = str(first_number) + ' ' + str(second_number)  # format quest text
     corr_ans = str(list_gcd_common[0])  # calculate correct answer
+    print(list_gcd_common[0])
+    print(list_gcd_common)
+    print(corr_ans)
     return quest, corr_ans, task_text
 
 
