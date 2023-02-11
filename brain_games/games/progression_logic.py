@@ -49,7 +49,8 @@ def game_drive():
         if user_ans == corr_ans:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            print(f"'{user_ans}' is wrong answer ;(. "
+                  f"Correct answer was '{corr_ans}'.")
             i = 0
             break
     return i, round_count

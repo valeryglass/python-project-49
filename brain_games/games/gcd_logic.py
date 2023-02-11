@@ -22,7 +22,8 @@ def get_devisor_list(number):
 
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
-    task_text = 'Find the greatest common divisor of given numbers.'  # task text
+    task_text = ('Find the greatest common divisor of '
+                 'given numbers.')  # task text
     x = 1  # parameter for randomization
     y = 9  # parameter for randomization
     list_gcd_common = []  # list of common gcd
@@ -57,7 +58,8 @@ def game_drive():
         if user_ans == corr_ans:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            print(f"'{user_ans}' is wrong answer ;(. "
+                  f"Correct answer was '{corr_ans}'.")
             i = 0
             break
     return i, round_count

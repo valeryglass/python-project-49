@@ -5,7 +5,8 @@ import random
 
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
-    task_text = 'Answer "yes" if the number is even, otherwise answer "no".'  # task text
+    task_text = ('Answer "yes" if the number is even, '
+                 'otherwise answer "no".')  # task text
     x = 0  # parameter for randomization
     y = 99  # parameter for randomization
     quest = random.randint(x, y)  # format quest text
@@ -34,7 +35,8 @@ def game_drive():
             print('Correct!')
             print(i)
         else:
-            print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            print(f"'{user_ans}' is wrong answer ;(. "
+                  f"Correct answer was '{corr_ans}'.")
             i = 0
             break
     return i, round_count

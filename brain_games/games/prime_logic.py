@@ -15,7 +15,8 @@ def is_prime(number):
 
 def logic_outputs():
     # make 'quest' and 'correct answer' for specific task
-    task_text = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # task text
+    task_text = ('Answer "yes" if given number is prime. '
+                 'Otherwise answer "no".')  # task text
     x = 0  # parameter for randomization
     y = 99  # parameter for randomization
     quest = random.randint(x, y)  # format quest text
@@ -43,7 +44,8 @@ def game_drive():
         if user_ans == corr_ans:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            print(f"'{user_ans}' is wrong answer ;(. "
+                  f"Correct answer was '{corr_ans}'.")
             i = 0
             break
     return i, round_count

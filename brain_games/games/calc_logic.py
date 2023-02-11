@@ -12,7 +12,7 @@ def logic_outputs():
     first_number = random.randint(x, y)  # first element
     second_number = random.randint(x, y)  # second element
     operator = random.choice(operator_list)
-    quest = str(first_number) + ' ' + operator + ' ' + str(second_number)  # format quest text
+    quest = str(first_number) + ' ' + operator + ' ' + str(second_number)
     corr_ans = str(eval(quest))  # calculate correct answer
     return quest, corr_ans, task_text
 
@@ -34,7 +34,8 @@ def game_drive():
         if user_ans == corr_ans:
             print('Correct!')
         else:
-            print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{corr_ans}'.")
+            print(f"'{user_ans}' is wrong answer ;(. "
+                  f"Correct answer was '{corr_ans}'.")
             i = 0
             break
     return i, round_count
