@@ -35,9 +35,6 @@ def logic_outputs():
     list_gcd_common.sort(reverse=True)
     quest = str(first_number) + ' ' + str(second_number)  # format quest text
     correct_answer = str(list_gcd_common[0])  # calculate correct answer
-    print(list_gcd_common[0])
-    print(list_gcd_common)
-    print(correct_answer)
     return quest, correct_answer, task_text
 
 
