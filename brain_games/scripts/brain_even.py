@@ -18,7 +18,7 @@ def brain_even(game):
 
 
 def main():
-    brain_even('brain_even')
+    brain_even('even_logic')
 
 
 if __name__ == '__main__':

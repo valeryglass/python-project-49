@@ -18,7 +18,7 @@ def brain_prime(game):
 
 
 def main():
-    brain_prime('brain_prime')
+    brain_prime('prime_logic')
 
 
 if __name__ == '__main__':

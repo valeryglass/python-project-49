@@ -18,7 +18,7 @@ def brain_calc(game):
 
 
 def main():
-    brain_calc('brain_calc')
+    brain_calc('calc_logic')
 
 
 if __name__ == '__main__':

@@ -18,7 +18,7 @@ def brain_gcd(game):
 
 
 def main():
-    brain_gcd('brain_gcd')
+    brain_gcd('gcd_logic')
 
 
 if __name__ == '__main__':

@@ -18,7 +18,7 @@ def brain_progression(game):
 
 
 def main():
-    brain_progression('brain_progression')
+    brain_progression('prog_logic')
 
 
 if __name__ == '__main__':
