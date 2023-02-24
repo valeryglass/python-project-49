@@ -12,9 +12,9 @@ name = welcome_user()
 
 def brain_calc(game):
     t = game_drive(game)
-    i = t[0]
-    raund_count = t[1]
-    summary(i, raund_count, name)  # Print game summary
+    raund_index = t[0]
+    MAX_RAUND = t[1]
+    summary(raund_index, MAX_RAUND, name)  # Print game summary
 
 
 def main():

@@ -9,17 +9,16 @@ from brain_games.games.progression_logic import logic_outputs as prog_logic
 
 def game_drive(game):
     # raund revolver
-    i = 1  # raund index
-    raund_count = 3  # max raund
-    while i <= raund_count:
+    MAX_RAUND = 3  # max raund
+    for raund_index in range(1, MAX_RAUND + 1):
         logic_outputs_module = game + '()'
         logic_outputs_list = eval(logic_outputs_module)
         quest = logic_outputs_list[0]
         correct_answer = logic_outputs_list[1]
         task_text = logic_outputs_list[2]
-        if i == 1:
+        if raund_index == 1:
             print(f'{task_text}')
-        i += 1
+        raund_index += 1
         print(f'Question: {quest}')
         user_answer = input('Your answer: ')
         if user_answer == correct_answer:
@@ -27,9 +26,9 @@ def game_drive(game):
         else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
-            i = 0
+            raund_index = 0
             break
-    return i, raund_count
+    return raund_index, MAX_RAUND
 
 
 def main():
