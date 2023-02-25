@@ -6,7 +6,7 @@ from brain_games.games.game_drive import game_drive
 
 def brain_even(game):
     game_drive(game)
- 
+
 
 def main():
     brain_even('even_logic')
