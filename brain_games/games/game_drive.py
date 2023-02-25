@@ -1,5 +1,6 @@
 # file <game_drive.py> game-drive logic
 
+from brain_games.cli import welcome_user, summary
 from brain_games.games.calc_logic import logic_outputs as calc_logic
 from brain_games.games.even_logic import logic_outputs as even_logic
 from brain_games.games.gcd_logic import logic_outputs as gcd_logic
@@ -8,7 +9,8 @@ from brain_games.games.progression_logic import logic_outputs as prog_logic
 
 
 def game_drive(game):
-    # raund revolver
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
     MAX_RAUND = 3  # max raund
     for raund_index in range(1, MAX_RAUND + 1):
         logic_outputs_module = game + '()'
@@ -28,6 +30,7 @@ def game_drive(game):
                   f"Correct answer was '{correct_answer}'.")
             raund_index = 0
             break
+    summary(raund_index, MAX_RAUND, name)  # Print game summary
     return raund_index, MAX_RAUND
 
 
