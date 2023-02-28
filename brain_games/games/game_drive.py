@@ -37,7 +37,7 @@ def game_drive(game):
 
 
 def main():
-    game_drive(game)
+    game_drive()
 
 
 if __name__ == '__main__':
