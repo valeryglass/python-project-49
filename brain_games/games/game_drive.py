@@ -14,13 +14,12 @@ def print_task_text(task_text, raund_index):
 
 
 def game_drive(game):
-    '''   '''
+    '''Greet and led the user through the game'''
     # intro
     print('Welcome to the Brain Games!')
     name = welcome_user()
     MAX_RAUND = 3  # max raund
-    # round revolver
-    for raund_index in range(1, MAX_RAUND + 1):
+    for raund_index in range(1, MAX_RAUND + 1):  # round revolver
         logic_outputs_module = game + '()'  # build logic
         logic_outputs_list = eval(logic_outputs_module)  # get logic results
         quest = logic_outputs_list[0]

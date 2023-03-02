@@ -4,7 +4,7 @@ import random
 
 
 def is_prime(number):
-    # define weather given number is prime or not
+    '''Define weather given number is prime or not'''
     if number <= 1:
         return False
     for i in range(2, number):
@@ -14,7 +14,7 @@ def is_prime(number):
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer' for specific task
+    '''Make 'quest' and 'correct answer' for specific task'''
     task_text = ('Answer "yes" if given number is prime. '
                  'Otherwise answer "no".')  # task text
     x = 0  # parameter for randomization

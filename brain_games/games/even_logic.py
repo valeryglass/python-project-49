@@ -4,7 +4,7 @@ import random
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer' for specific task
+    '''Make 'quest' and 'correct answer' for specific task'''
     task_text = ('Answer "yes" if the number is even, '
                  'otherwise answer "no".')  # task text
     x = 0  # parameter for randomization

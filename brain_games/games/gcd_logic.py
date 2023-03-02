@@ -4,7 +4,7 @@ import random
 
 
 def get_devisor_list(number):
-    # make list of devisors for given number
+    '''Make list of devisors for given number'''
     j = number
     i = 0
     devisors_list = []
@@ -21,7 +21,7 @@ def get_devisor_list(number):
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer' for specific task
+    '''Make 'quest' and 'correct answer' for specific task'''
     task_text = ('Find the greatest common divisor of '
                  'given numbers.')  # task text
     x = 1  # parameter for randomization

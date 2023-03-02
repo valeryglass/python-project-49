@@ -4,7 +4,7 @@ import random
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer' for specific task
+    '''Make 'quest' and 'correct answer' for specific task'''
     task_text = 'What is the result of the expression?'  # task text
     x = 0  # parameter for randomization
     y = 9  # parameter for randomization

@@ -15,7 +15,7 @@ def get_progression_list(d=1, a1=1, a0=10):
 
 
 def logic_outputs():
-    # make 'quest' and 'correct answer' for specific task
+    '''Make 'quest' and 'correct answer' for specific task'''
     task_text = 'What number is missing in the progression?'  # task text
     x = 1  # parameter for randomization
     x1 = 5  # parameter for randomization
